@@ -46,6 +46,31 @@ public class Fechas {
         m2 = Integer.parseInt(mes2);
         a2 = Integer.parseInt(año2);
 
+        if(a1<a2){
+            System.out.println("La primera persona es mayor");
+        }
+        if(a1>a2){
+            System.out.println("La segunda persona es mayor");
+        }
+
+        if((a1==a2)&&(m1==m2)&&(d1==d2)){
+            System.out.println("Tienen la misma edad");
+        }
+        if((a1==a2)&&(m1<m2)){
+            System.out.println("La primera persona es mayor");
+        }
+        if((a1==a2)&&(m1>m2)){
+            System.out.println("La segunda persona es mayor");
+        }
+        if((a1==a2)&&(m1==m2)&&(d1<d2)){
+            System.out.println("La primera persona es mayor");
+        }
+        if((a1==a2)&&(m1==m2)&&(d1>d2)){
+            System.out.println("La segunda persona es mayor");
+        }
+
+
+        /*
         int nacimiento1 = (d1+m1+a1); //sumar las partes de las fechas
         int nacimiento2 = (d2+m2+a2);
 
@@ -62,7 +87,7 @@ public class Fechas {
         if(nacimiento1 == nacimiento2){
             System.out.println("Tienen la misma edad");
         }
-
+        */
 
     }
 }
